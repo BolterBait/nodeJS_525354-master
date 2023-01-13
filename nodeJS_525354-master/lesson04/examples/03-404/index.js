@@ -25,7 +25,7 @@ app.get("/myhome", (req, res) => {
 });
 
 // routes
-app.use("/api/movies", routeMovies);
+app.use("/api/movie", routeMovies);
 
 // 404
 app.use((req, res) => {

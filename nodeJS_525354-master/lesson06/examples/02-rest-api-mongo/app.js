@@ -13,7 +13,7 @@ app.use(express.json()); // tell express to work with JSON in body
 app.use(morgan("dev"));
 
 // routes
-app.use("/api/movies", routerMovies);
+app.use("/api/movie", routerMovies);
 
 // 404
 app.use((req, res) => {
