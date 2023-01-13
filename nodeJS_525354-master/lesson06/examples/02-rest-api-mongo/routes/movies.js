@@ -1,6 +1,5 @@
 const express = require("express");
-const db = require("../db/db.js");
-const { HttpError, tryCatchWrapper } = require("../helpers/index.js");
+const { tryCatchWrapper } = require("../helpers/index.js");
 const { createMovie, deleteMovie, getMovie, getMovies } = require("../controllers/movies.controller");
 const { validateBody } = require("../middlewares");
 const { addMovieSchema } = require("../schemas/movies");
